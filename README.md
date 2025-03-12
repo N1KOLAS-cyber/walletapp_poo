@@ -1,4 +1,4 @@
-# walletapp_ui
+# wallet_poo
 
 A new Flutter project.
 
