@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
   @override
   State<HomePage> createState() => _HomePageState();
 }
-
+//se creo la clase homepage state que extiende de state
 class _HomePageState extends State<HomePage> {
   final _controller = PageController();
 
