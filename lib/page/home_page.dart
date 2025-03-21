@@ -4,7 +4,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:walletapp_ui/util/my_button.dart';
 import 'package:walletapp_ui/util/my_card.dart';
 import 'package:walletapp_ui/util/my_list_tile.dart';
-
+// define la clase home page como stateful widget
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -18,17 +18,19 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //boton flotante de sccion principal
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.blue, 
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         child: const Icon(
-          Icons.monetization_on,
+          Icons.monetization_on, //icono de moneda 
           size: 30,
           color: Colors.white,
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      //barra de navegacion inferior
       bottomNavigationBar: BottomAppBar(
         color: Colors.grey[50],
         child: Row(
@@ -37,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             IconButton(
               onPressed: () {},
               icon: Icon(
-                Icons.home,
+                Icons.home, // boton del menu inferior , icono de la casa 
                 color: Colors.blue[100],
                 size: 30,
               ),
@@ -45,7 +47,7 @@ class _HomePageState extends State<HomePage> {
             IconButton(
               onPressed: () {},
               icon: const Icon(
-                Icons.settings,
+                Icons.settings, // boton del menu inferior, icono de ajustes  
                 color: Colors.grey,
                 size: 30,
               ),
@@ -57,10 +59,11 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            // app bar
+            // app bar personalizada 
             Padding(
               padding:
                   const EdgeInsets.only(left: 25.0, right: 25.0, top: 10.0),
+                  //app bar
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -71,6 +74,7 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
+                  //plus button 
                   Container(
                     padding: const EdgeInsets.all(5.0),
                     decoration: const BoxDecoration(
@@ -85,6 +89,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            // carrusel de la tarjeta de credito
             const SizedBox(
               height: 25,
             ),
@@ -120,12 +125,13 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 15,
             ),
+            //indicador de paginas
             SmoothPageIndicator(
               controller: _controller,
               count: 3,
               effect: ExpandingDotsEffect(
                   dotHeight: 8.0,
-                  dotColor: Colors.grey,
+                  dotColor: const Color.fromARGB(255, 54, 32, 32),
                   activeDotColor: Colors.grey.shade700),
             ),
 
@@ -134,6 +140,7 @@ class _HomePageState extends State<HomePage> {
             ),
 
             // 3 button
+            //botones de acciones principales para enviar, pagar y facturar y el boton de bill
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 25.0),
               child: Row(
@@ -156,6 +163,7 @@ class _HomePageState extends State<HomePage> {
             ),
 
             // stats column
+            //columna de estadisticas y transacciones o seccion de estadisticas y transacciones
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 25.0, horizontal: 20.0),
               child: Column(

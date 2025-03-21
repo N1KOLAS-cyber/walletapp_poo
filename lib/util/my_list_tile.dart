@@ -8,11 +8,11 @@ class MyListTile extends StatelessWidget {
   final String iconPath;
 
   const MyListTile({
-    Key? key,
+    super.key,
     required this.titleList,
     required this.subtitleList,
     required this.iconPath,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
