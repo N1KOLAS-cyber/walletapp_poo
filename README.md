@@ -259,22 +259,6 @@ Agradece solicitudes de mejora que respeten el diseño y no rompan la compatibil
 
 ---
 
-## 13. Licencia
-
-Este proyecto puede ser publicado bajo una licencia permisiva (por ejemplo, MIT). A continuación un ejemplo breve de nota de licencia (reemplaza si ya tienes otra):
-
-```
-MIT License
-
-Copyright (c) 2025 <Tu Nombre>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
----
-
 ## Apéndice — Acciones rápidas y snippets útiles
 
 * **Agregar `onPressed` a `MyButton`** (ejemplo):
